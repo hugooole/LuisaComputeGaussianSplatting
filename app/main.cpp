@@ -36,9 +36,9 @@ int main(int argc, char** argv)
     luisa::log_level_info();
     luisa::uint2 resolution = luisa::make_uint2(1600, 1063);
 
-    constexpr auto default_ply_path = "gsplat.ply";
+    constexpr auto default_ply_path = "/Users/zhiguotang/Downloads/mip360_bicycle_30000.ply";
     auto           ply_path         = std::filesystem::path{ default_ply_path };
-    std::string    backend          = "dx";
+    std::string    backend          = "metal";
     Context        context{ argv[0] };
     std::string    out_dir        = "out";
     WorldType      world_type     = WorldType::COLMAP;
